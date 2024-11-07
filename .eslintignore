@@ -1,0 +1,6 @@
+**/.github
+**/.husky
+**/.idea
+**/node_modules
+dist*/**
+pnpm-lock.yaml

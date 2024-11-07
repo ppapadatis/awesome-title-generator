@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+pnpm types
+pnpm lint
+pnpm format

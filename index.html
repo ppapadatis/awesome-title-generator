@@ -1,39 +1,31 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-    <title>Awesome Title Generator</title>
-    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="css/global.css">
-</head>
-
-<body>
-    <div class="ui middle aligned center aligned grid">
-        <div class="column">
-            <h2 class="ui teal image header">
-              <div class="content">
-                Awesome Title Generator
-              </div>
-            </h2>
-            <form class="ui large form" autocomplete="off">
-                <div class="ui stacked segment">
-                    <div class="field">
-                        <div class="ui left icon input">
-                            <input type="text" name="title" readonly>
-                        </div>
-                    </div>
-                    <div class="ui fluid large teal submit button">Generate</div>
-                </div>
-            </form>
-        </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Title Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="flex flex-col items-center w-1/2">
+      <input
+        type="text"
+        id="title-input"
+        readonly
+        class="border border-gray-300 p-2 rounded mb-4 w-full text-center"
+        placeholder="Generated Title"
+      />
+      <button
+        id="generate-button"
+        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+      >
+        Generate Title
+      </button>
     </div>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/semantic.min.js"></script>
-    <script src="js/global.js"></script>
-</body>
 
+    <script type="module" src="./src/index.ts"></script>
+  </body>
 </html>
